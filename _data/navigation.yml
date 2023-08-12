@@ -1,11 +1,19 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  # - title: "Quick-Start Guide"
+  #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "Must Watch"
+    url: /must-watch/
+  - title: "Must Play"
+    url: /must-play/
+  - title: "Must Read"
+    url: /must-read/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
+  - title: "Blog"
+    url: /year-archive/
+  - title: "Academic Career"
+    url: /academics/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"

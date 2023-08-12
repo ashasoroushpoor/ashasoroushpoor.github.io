@@ -1,0 +1,70 @@
+/* assets/css/custom.css */
+
+.grid__item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+}
+
+.archive__item-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.archive__item-title {
+  font-size: 1.2rem;
+}
+
+.archive__item-meta {
+  display: flex;
+  align-items: center;
+}
+
+.rating {
+  color: gold;
+}
+
+.archive__item-image {
+  width: 150px;
+  height: 150px;
+}
+
+.archive__item-image img {
+  object-fit: cover;
+}
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie-card {
+  background-color: #00adb5;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 5px 0px #888;
+  margin: 0px 5px;
+}
+
+.movie-img {
+  max-height: 168px;
+}
+
+.movie-img img {
+  width: 100%;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.movie-title {
+  font-size: 20px;
+}
+
+.movie-intro {
+  font-size: 16px;
+}
