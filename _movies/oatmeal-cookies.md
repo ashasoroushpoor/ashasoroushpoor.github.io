@@ -1,7 +1,9 @@
 ---
 title: "Oatmeal Cookies"
-image: /assets/images/peanut-butter-cookies-lg.jpg
+poster: /assets/images/peanut-butter-cookies-lg.jpg
+director: asha soroushpoor
 rating: 10
+description: this is a test
 ---
 
 Oatmeal cookies are a proverbial favorite with both kids and adults. This crisp and chewy cookie is loaded with oats, dried fruit, and chopped nuts.

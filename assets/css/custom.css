@@ -1,11 +1,17 @@
 /* assets/css/custom.css */
 
-.grid__item {
+/* .grid__item {
   display: flex;
   justify-content: space-between;
   width: 100%;
   flex-direction: column;
   margin-bottom: 0.5rem;
+} */
+.grid__item2 {
+  width: 80%;
+  height: 300px;
+  position: sticky;
+  margin: 1.5em;
 }
 
 .archive__item-info {
@@ -34,37 +40,281 @@
 .archive__item-image img {
   object-fit: cover;
 }
-.movie-list {
-  display: flex;
-  flex-wrap: wrap;
-}
 
-.movie-card {
-  background-color: #00adb5;
-  width: 100%;
+/* .movie-card {
   max-width: 300px;
+  margin: 20px;
+  background-color: #222;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0px 4px 5px 0px #888;
-  margin: 0px 5px;
+} */
+
+/* .movie-image {
+  position: relative;
 }
 
-.movie-img {
-  max-height: 168px;
-}
-
-.movie-img img {
+.movie-image img {
   width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
-.card-body {
-  padding: 20px;
+.movie-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
 
-.movie-title {
-  font-size: 20px;
+.movie-overlay:hover {
+  opacity: 1;
 }
 
-.movie-intro {
-  font-size: 16px;
+.movie-overlay h3,
+.movie-overlay p {
+  color: #fff;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+.movie-overlay p {
+  font-size: 18px;
+}
+
+.movie-description p {
+  margin: 10px;
+} */
+
+.card {
+  width: 800px;
+  height: 300px;
+  background: transparent;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
+}
+.card_left {
+  width: 40%;
+  height: 300px;
+  float: left;
+  overflow: hidden;
+  background: transparent;
+}
+.card_left img {
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+  border-radius: 10px 0 0 10px;
+  -webkit-border-radius: 10px 0 0 10px;
+  -moz-border-radius: 10px 0 0 10px;
+  position: relative;
+}
+.card_right {
+  width: 60%;
+  float: left;
+  background: #000000;
+  height: 300px;
+  border-radius: 0 10px 10px 0;
+  -webkit-border-radius: 0 10px 10px 0;
+  -moz-border-radius: 0 10px 10px 0;
+}
+.card_right h1 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  text-align: left;
+  font-size: 40px;
+  margin: 30px 0 0 0;
+  padding: 0 0 0 40px;
+  letter-spacing: 1px;
+}
+.card_right__details ul {
+  list-style-type: none;
+  padding: 0 0 0 40px;
+  margin: 10px 0 0 0;
+}
+.card_right__details ul li {
+  display: inline;
+  color: #e3e3e3;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 0 40px 0 0;
+}
+.card_right__rating__stars {
+  position: relative;
+  right: 160px;
+  margin: 10px 0 10px 0;
+  /***** CSS Magic to Highlight Stars on Hover *****/
+  /* hover previous stars in list */
+}
+.card_right__rating__stars fieldset,
+.card_right__rating__stars label {
+  margin: 0;
+  padding: 0;
+}
+.card_right__rating__stars .rating {
+  border: none;
+}
+.card_right__rating__stars .rating > input {
+  display: none;
+}
+.card_right__rating__stars .rating > label:before {
+  margin: 5px;
+  font-size: 1.25em;
+  display: inline-block;
+  content: "";
+  font-family: FontAwesome;
+}
+.card_right__rating__stars .rating > .half:before {
+  content: "";
+  position: absolute;
+}
+.card_right__rating__stars .rating > label {
+  color: #ddd;
+  float: right;
+}
+.card_right__rating__stars .rating > input:checked ~ label,
+.card_right__rating__stars .rating:not(:checked) > label:hover,
+.card_right__rating__stars .rating:not(:checked) > label:hover ~ label {
+  color: #ffd700;
+}
+.card_right__rating__stars .rating > input:checked + label:hover,
+.card_right__rating__stars .rating > input:checked ~ label:hover,
+.card_right__rating__stars .rating > label:hover ~ input:checked ~ label,
+.card_right__rating__stars .rating > input:checked ~ label:hover ~ label {
+  color: #ffed85;
+}
+.card_right__review p {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  padding: 0 40px 0 40px;
+  letter-spacing: 1px;
+  margin: 10px 0 10px 0;
+  line-height: 20px;
+}
+.card_right__review a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  padding: 0 0 0 40px;
+  color: #ffda00;
+  margin: 0;
+}
+.card_right__button {
+  padding: 0 0 0 40px;
+  margin: 30px 0 0 0;
+}
+.card_right__button a {
+  color: #ffda00;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  border: 2px solid #ffda00;
+  padding: 10px 10px 10px 40px;
+  font-size: 12px;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/343086/COMdoWZ.png);
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  background-position: 7% 50%;
+  border-radius: 5px;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+.card_right__button a:hover {
+  color: #000000;
+  background-color: #ffda00;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/343086/rFQ5dHA.png);
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  background-position: 10% 50%;
+  cursor: pointer;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+/* Dark Mode */
+/* body.dark-mode {
+  background-color: #111;
+  color: #fff;
+}
+
+.movie-card.dark-mode {
+  background-color: #555;
+}
+
+.movie-overlay.dark-mode {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.movie-overlay.dark-mode h3,
+.movie-overlay.dark-mode p {
+  color: #fff;
+}
+
+/* .movie-rating {
+  color: #ffde16;
+  font-size: 22px;
+  margin: 5px 0;
+} */
+
+/* .movie-rating {
+  display: inline-block;
+  font-size: 0;
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  text-align: center;
+  cursor: default;
+} */
+
+.star-rating {
+  display: inline-block;
+  position: relative;
+  width: 1em;
+}
+
+.star-rating::before {
+  content: "\2605";
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ddd;
+}
+
+.star-rating::after {
+  content: "\2605";
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ffde16;
+  width: 0;
+  overflow: hidden;
+}
+.movie-rating {
+  font-size: 24px;
+  direction: rtl;
+  display: inline-block;
+}
+
+.star {
+  color: #ddd;
+}
+
+.filled {
+  color: #ffde16;
 }

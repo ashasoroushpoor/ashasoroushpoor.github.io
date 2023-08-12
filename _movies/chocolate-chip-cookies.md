@@ -1,7 +1,9 @@
 ---
 title: "Chocolate Chip Cookies"
-image: /assets/images/peanut-butter-cookies-lg.jpg
-rating: 10
+poster: /assets/images/peanut-butter-cookies-lg.jpg
+director: asha soroushpoor
+rating: 5
+description: this is a test
 ---
 
 A chocolate chip cookie is a drop cookie that originated in the United States and features chocolate chips as its distinguishing ingredient.
