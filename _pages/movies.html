@@ -1,10 +1,11 @@
 ---
-layout: archive
+layout: default
 title: "Movies"
 permalink: /must-watch/
 author_profile: true
 ---
 
+{% include movielist.html %}
 <!-- <head>
   <link
     rel="stylesheet"
@@ -27,37 +28,5 @@ author_profile: true
   <i class="star fas fa-star"></i>
   {% endfor %} -->
 <!-- <div> -->
-{% for movie in site.movies %}
-<div class="grid__item2">
-  <div class="card">
-    <div class="card_left">
-      <img src="{{ movie.poster }}" alt="{{ movie.title }}" />
-    </div>
-    <div class="card_right">
-      <h1>{{ movie.title }}</h1>
-      <div class="card_right__details">
-        <ul>
-          <li>{{ movie.year }}</li>
-          <li>{{ movie.director }}</li>
-        </ul>
-        <div class="card_right__review">
-          <p>{{ movie.description }}</p>
-        </div>
-      </div>
-      <!-- <div class='card_right__rating'>
-          {% assign whole_stars = movie.rating | divided_by: 2 %} {% assign
-  decimal_part = movie.rating | modulo: 2 %} {% assign empty_stars = 5 |
-  minus: whole_stars | minus: decimal_part %} {% for i in
-  (1..whole_stars) %}
-  <i class="star filled fas fa-star"></i>
-  {% endfor %} {% if decimal_part > 0 %}
-  <i class="star filled fas fa-star-half-alt"></i>
-  {% endif %} {% for i in (1..empty_stars) %}
-  <i class="star fas fa-star"></i>
-  {% endfor %}
-        </div> -->
-    </div>
-  </div>
-</div>
-{% endfor %} {% include paginator.html %}
+
 <!-- </div> -->
