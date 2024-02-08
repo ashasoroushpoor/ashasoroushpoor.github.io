@@ -21,11 +21,12 @@ title_separator: "-"
 subtitle: # site tagline that appears below site title in masthead
 name: "Asha Soroushpoor"
 description: "This is my personal webpage, here I put my personal intrests and intresting things that happens in my life, and maybe sometime my opinion about stuff"
-url: http://127.0.0.1:4000 # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+# url: http://127.0.0.1:4000
+url: ashasoroushpoor.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 # baseurl: # the subpath of your site, e.g. "/blog"
-repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository: ashasoroushpoor/ashasoroushpoor.github.io # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo: # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo: "/assets/images/website-logo.svg" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title: # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute: 200
@@ -105,19 +106,24 @@ analytics:
 author:
   name: "Asha Soroushpoor"
   avatar: "/assets/images/profile.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio: "This is my personal webpage, here I put my personal intrests and intresting things that happens in my life, and maybe sometime my opinion about stuff"
-  location: "Somewhere"
-  email:
+  bio: "This is my personal webpage, here I put my personal intrests and intresting things that happens in my life, and maybe sometime my opinion about stuff. For portfolio click on my picture"
+  location: "Tehran Iran"
+  email: ashasoroushpoor@gmail.com
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      # url: "mailto:ashasoroushpoor@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
+    - label: "X"
+      # icon: "fab fa-fw fa-twitter-square"
+      icon: "fa-brands fa-x-twitter"
+      url: "https://twitter.com/"
+    - label: "LinkedIn"
+      # icon: "fa-brands fa-linkedin"
+      icon: "icon-linkedin-sign"
+      url: "ttps://www.linkedin.com/in/asha-soroushpoor/"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
@@ -274,6 +280,12 @@ collections:
   movies:
     output: true
     permalink: /:collection/:path/
+  games:
+    output: true
+    permalink: /:collection/:path/
+  books:
+    output: true
+    permalink: /:collection/:path/
 # Defaults
 defaults:
   # _posts
@@ -299,6 +311,20 @@ defaults:
       path: ""
       type: movies
     values:
-      layout: page
+      layout: singlecardimg
+      author_profile: true
+      share: true
+  - scope:
+      path: ""
+      type: games
+    values:
+      layout: singlecardimg
+      author_profile: true
+      share: true
+  - scope:
+      path: ""
+      type: books
+    values:
+      layout: singlecardimg
       author_profile: true
       share: true

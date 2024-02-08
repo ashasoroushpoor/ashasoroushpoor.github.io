@@ -1,0 +1,1 @@
+{"rule":"DONT_WHAT","sentence":"^\\QI didn't where to start and what I should write, so I sought help.\\E$"}

@@ -1,9 +1,9 @@
 ---
 title: "Arcane Season 1"
-poster: \assets\images\movies\arcane.webp
+poster: /assets/images/movies/arcane.webp
 director: Alex Yee, Christian Linke
 rating: 9.5
 year: 2021
 description:
-link: https://www.imdb.com/title/tt11126994/
+infolink: https://www.imdb.com/title/tt11126994/
 ---

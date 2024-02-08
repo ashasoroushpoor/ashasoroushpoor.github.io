@@ -1,9 +1,9 @@
 ---
 title: " Everything Everywhere All at Once "
-poster: \assets\images\movies\everyth.jpeg
+poster: /assets/images/movies/everyth.jpeg
 director: Daniel Kwan, Daniel Scheinert
 rating: 8.9
 year: 2022
 description:
-link: https://www.imdb.com/title/tt6710474/
+infolink: https://www.imdb.com/title/tt6710474/
 ---

@@ -7,6 +7,15 @@ search: false
 
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+@import url(https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css);
+
+// importing core styling file
+// @import "./fontawesome/scss/fontawesome.scss";
+
+//  importing Font Awesome styles
+// @import "./fontawesome/scss/solid.scss";
+// @import "./fontawesome/scss/brands.scss";
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 @import "./custom.css"; // your custom CSS rules

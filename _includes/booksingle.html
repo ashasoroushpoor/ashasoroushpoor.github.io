@@ -1,0 +1,24 @@
+<div class="grid__item2">
+  <div class="card">
+    <div class="card_left">
+      <a href="{{ book.url }}">
+        <img src="{{ book.poster }}" alt="{{ book.title }}" />
+      </a>
+    </div>
+    <div class="card_right">
+      <h1>{{ book.title }}</h1>
+      <div class="card_right__details">
+        <ul>
+          <li>{{ book.year }}</li>
+          <li>{{ book.author }}</li>
+          <br />
+          <!-- <li>{{game.rating}} / 10</li> -->
+        </ul>
+        <div class="card_right__review">
+          <p>{{ book.description }}</p>
+          <a href="{{ book.infolink }}" target="_blank">more Info</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

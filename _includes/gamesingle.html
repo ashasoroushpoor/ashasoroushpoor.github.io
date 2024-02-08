@@ -1,0 +1,24 @@
+<div class="grid__item2">
+  <div class="card">
+    <div class="card_left">
+      <a href="{{ game.url }}">
+        <img src="{{ game.poster }}" alt="{{ game.title }}" />
+      </a>
+    </div>
+    <div class="card_right">
+      <h1>{{ game.title }}</h1>
+      <div class="card_right__details">
+        <ul>
+          <li>{{ game.year }}</li>
+          <!-- <li>{{ movie.director }}</li> -->
+          <br />
+          <li>{{game.rating}} / 10</li>
+        </ul>
+        <div class="card_right__review">
+          <p>{{ game.description }}</p>
+          <a href="{{ game.infolink }}" target="_blank">more Info</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

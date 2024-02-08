@@ -1,9 +1,9 @@
 ---
 title: "We need to talk About Kevin"
-poster: \assets\images\movies\we-need-to-talk-about-kevin.jpg
+poster: /assets/images/movies/we-need-to-talk-about-kevin.jpg
 director: Lynne Ramsay
 rating: 6
 year: 2011
 description:
-link: https://www.imdb.com/title/tt2085059/
+infolink: https://www.imdb.com/title/tt2085059/
 ---
