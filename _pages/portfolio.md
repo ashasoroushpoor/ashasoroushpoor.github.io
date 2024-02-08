@@ -21,7 +21,7 @@ gallery:
     url: /assets/images/gallery_port/kdz.jpg
 ---
 
-My name is Asha Soroushpoor. I was born in Tehran Iran in spring of 2000 in a Zoroastrian family. I recently got my bachelor degree in Computer Science from University of Tehran.
+My name is Asha Soroushpoor. I was born in Tehran Iran in spring of 2000s. I recently got my bachelor degree in Computer Science from University of Tehran.
 
 This is my personal website. It contains 3 parts. 
 
